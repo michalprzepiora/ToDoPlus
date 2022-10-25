@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
-public class SecSecurityConfig {
+public class SecurityConfig {
 
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
@@ -21,6 +21,8 @@ public class SecSecurityConfig {
                 .build();
         return new InMemoryUserDetailsManager(admin);
     }
+
+
 
 //    @Bean
 //    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
